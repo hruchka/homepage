@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Résumé</title>
-    <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+	<link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+	<link rel="stylesheet" href="assets/styles/styles.css">
   </head>
   <body>
 	<header>
@@ -11,7 +13,7 @@
 			Inspired by <a href="https://en.wikipedia.org/wiki/Robert_Pattinson" rel="external">Robert Pattinson</a> &#x1F308;
 		</div>
 	</header>
-	<main>
+	<main class="bg" id="main">
       <article>
         <div class="page" style="border-color: midnightblue;">
           <div class="stackable grid">
@@ -91,7 +93,8 @@
                   <div class="sixteen wide column">
                     <h2>Résumé</h2>
                     <p>&mdash; For almost ninety years I’ve walked among my kind, and yours… all the time thinking I was complete in myself, not realizing what I was seeking. And not finding anything, because you weren’t alive yet. You are the only one who has ever touched my heart. It will always be yours…</p>
-                  </div>
+					<p class="additional-intro">*In case you want to catch the <button class="hvr-sweep-to-right bg-toggle" onclick="toggle()">vibe</button></p>
+				</div>
                 </div>
               </div>
             </div>
@@ -103,7 +106,33 @@
             <div class="row">
               <div class="ten wide column">
                 <h3>Experience</h3>
-								<h6>Timeline</h6>
+				<h6>Working Experience</h6>
+				<ul class="timeline">
+					<li class="highlighted">
+						<p>
+							<em>My star career</em>
+						</p>
+						<p>
+							<strong>I need a producer, 'cause I ain't getting any younger...</strong>
+						</p>
+						<ol>
+							<li class="details">
+								<input type="checkbox" id="project-2" />
+								<label for="project-2" class="summary">
+									Here's where I played:
+								</label>
+								<div class="labels">
+									<span rel="external" class="label">Twilight</span>
+									<span rel="external" class="label">New Moon</span>
+									<span rel="external" class="label">Eclipse</span>
+									<span rel="external" class="label">Breaking Dawn: Part 1</span>
+									<span rel="external" class="label">Breaking Dawn: Part 2</span>
+								</div>
+							</li>
+						</ol>
+					</li>
+				</ul>
+				<h6>What I've been through</h6>
 								<ul class="timeline">
 									<li>
 										<p>
@@ -280,6 +309,10 @@
 		<span>Thank you for scrolling down! <em>‘See you soon’</em>&#x1F970;</span>
 	</footer>
 	<script>
+  function toggle() {
+	var main = document.getElementById("main");
+	main.classList.toggle('bg-img')
+  }
 	</script>
   </body>
 </html>
