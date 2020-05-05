@@ -6,3 +6,5 @@ It's important for employees to know you have the necessary experience to do the
 
 # How To Use
 This Résumé is an MIT-licensed open-source project. It's an independent project with ongoing development made possible thanks to the help of **Binary Studio Academy**. This page is hosted on [**GitHub Pages**](https://pages.github.com/), which makes it much easier to use. The detailed information can be found on [**Wiki Pages**](https://github.com/hruchka/homepage/wiki) of this repository.
+
+I sincerely hope that my project will help you with creating your resume
